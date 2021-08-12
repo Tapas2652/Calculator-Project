@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <body <body style="background-image:  url('21.jpg')"></body>>
+<style>
+.contain{
+display: flex;
+}
+#display{
+  width: 800px;
+  height: 50px;
+}
+.mathButtons{
+  width: 200px;
+  height: 100px;
+  background-color: rgba(139, 27, 27, 0.3);
+  color: white;
+}
+.mathButtons:hover{
+  background-color: rgb(4, 247, 45);
+  
+  }
+  #clearButton:hover{
+    background-color: orangered;
+  }
+  #container{
+  
+    width: 700px;
+    height: 500px;
+
+    }
+    .buttondigits{
+      background-color:  rgb(40, 200, 240);
+      color: rgb(252, 0, 0);
+      height: 100px;
+      width: 200px;
+    }
+    #clearButton{
+      width: 200px;
+      height: 100px;
+      background-color: rgba(200, 235, 103, 0.3);
+      font-weight: bold;
+    }
+	.buttondigits:hover {
+background-color: rgb(98, 217, 238);
+}
+
+</style>
+<title> standard calculator </title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="cal.css"/>
+</head>
+<body>
+  
+     <div class="container">
+	<fieldset id="container">
+	  <form name="calculator">
+<input type="text" id="display" name="display" readonly>
+<br>
+<br>
+<br>
+<div class="contain">
+<input class="buttondigits" type="button" value="7" onclick="calculator.display.value += '7'">
+<input class="buttondigits" type="button" value="8" onclick="calculator.display.value += '8'">
+<input class="buttondigits" type="button" value="9" onclick="calculator.display.value += '9'">
+<input class="mathButtons" type="button" value="+" onclick="calculator.display.value += '+'">
+</div>
+
+<div class="contain">
+<input class="buttondigits" type="button" value="4" onclick="calculator.display.value += '4'">
+<input class="buttondigits" type="button" value="5" onclick="calculator.display.value += '5'">
+<input class="buttondigits" type="button" value="6" onclick="calculator.display.value += '6'">
+<input class="mathButtons" type="button" value="-" onclick="calculator.display.value += '-'">
+</div>
+
+<div class="contain">
+<input class="buttondigits" type="button" value="1" onclick="calculator.display.value += '1'">
+<input class="buttondigits" type="button" value="2" onclick="calculator.display.value += '2'">
+<input class="buttondigits" type="button" value="3" onclick="calculator.display.value += '3'">
+<input class="mathButtons" type="button" value="" onclick="calculator.display.value += ''">
+</div>
+
+<div class="contain">
+<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
+<input class="buttondigits" type="button" value="0" onclick="calculator.display.value += '0'">
+<input class= "mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+<input class="mathButtons" type="button" value="/" onclick="calculator.display.value += '/'">
+</div>
+</form> 
+</fieldset>
+</div>
+</body>
+</html>
